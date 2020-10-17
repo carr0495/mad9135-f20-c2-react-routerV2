@@ -43,10 +43,10 @@ function App() {
     <Route exact path="/">
       <Home data={data} setLink={setLink}/>
     </Route>
-    <Route  path="/albums">
+    <Route  path={["/albums"]}>
       <Albums data={data}/>
     </Route>
-    <Route  path="/posts">
+    <Route  path={["/posts"]}>
       <Posts data={data}/>
     </Route>
   </Switch>
