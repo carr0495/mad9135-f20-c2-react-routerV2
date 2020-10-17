@@ -1,0 +1,91 @@
+.users_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.user_card{
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    background-color:  rgba(255, 255, 255, 0.283);
+    color: white;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    align-items: center;
+    text-align: center;
+}
+
+img{
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 5px black;
+}
+.button_container{
+    /* background-color:  rgb(208, 196, 26) ; */
+   
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    color: black;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button_container > .NavButton{
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.378);
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    font-family: sans-serif;
+    box-shadow:inset 0px 0px 5px   rgba(0, 0, 0, 0.31) ;
+
+}
+
+.button_container > .NavButton:after {
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+  }
+  
+  /* Hover state - trigger effect */
+  
+  .button_container > .NavButton:hover:after {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+  
+  /* Active state */
+  
+  .button_container > .NavButton:active:after {
+    opacity: 0;
+  }
+
