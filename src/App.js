@@ -34,13 +34,13 @@ function App() {
       <header>
         <h1>Navigation</h1>
       <nav className="home_nav_links">
-        <NavLink to="#/" onClick={()=>{setLink('users')}}>Home</NavLink>
+        <NavLink to="/" onClick={()=>{setLink('users')}}>Home</NavLink>
         <NavLink to="#/albums" onClick={()=>{setLink('albums')}}>Albums</NavLink>
         <NavLink to="#/posts" onClick={()=>{setLink('posts')}}>Posts</NavLink>
       </nav>
       </header>
     <Switch>
-    <Route exact path="#/">
+    <Route exact path="/">
       <Home data={data} setLink={setLink}/>
     </Route>
     <Route  path={["#/albums"]}>
