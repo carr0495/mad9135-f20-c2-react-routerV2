@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter as Router,NavLink } from 'react-router-dom';
+import { BrowserRouter as Router,NavLink } from 'react-router-dom';
 import './Home.css'
 import icon from './user.png'
 
