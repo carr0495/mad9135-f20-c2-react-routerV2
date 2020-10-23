@@ -35,8 +35,8 @@ function App() {
         <h1>Navigation</h1>
       <nav className="home_nav_links">
         <NavLink to="/" onClick={()=>{setLink('users')}}>Home</NavLink>
-        <NavLink to="#/albums" onClick={()=>{setLink('albums')}}>Albums</NavLink>
-        <NavLink to="#/posts" onClick={()=>{setLink('posts')}}>Posts</NavLink>
+        <NavLink to="/albums" onClick={()=>{setLink('albums')}}>Albums</NavLink>
+        <NavLink to="/posts" onClick={()=>{setLink('posts')}}>Posts</NavLink>
       </nav>
       </header>
     <Switch>

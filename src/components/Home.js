@@ -21,8 +21,8 @@ function Home (props) {
                     <p>{user.website}</p>
               </div>
               <div className="button_container">
-                    <NavLink className="NavButton" onClick={() => {props.setLink(`#/users/${user.id}/albums`)}} to={`#/albums/${user.id}`}>Albums</NavLink>
-                    <NavLink className="NavButton" onClick={() => {props.setLink(`#/users/${user.id}/posts`)}} to={`#/posts/${user.id}`}>Posts</NavLink>
+                    <NavLink className="NavButton" onClick={() => {props.setLink(`/users/${user.id}/albums`)}} to={`/albums/${user.id}`}>Albums</NavLink>
+                    <NavLink className="NavButton" onClick={() => {props.setLink(`/users/${user.id}/posts`)}} to={`/posts/${user.id}`}>Posts</NavLink>
               </div>
           </div>
     
