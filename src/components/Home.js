@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router,NavLink } from 'react-router-dom';
+import { HashRouter as Router,NavLink } from 'react-router-dom';
 import './Home.css'
 import icon from './user.png'
 
@@ -21,8 +21,8 @@ function Home (props) {
                     <p>{user.website}</p>
               </div>
               <div className="button_container">
-                    <NavLink className="NavButton" onClick={() => {props.setLink(`users/${user.id}/albums`)}} to={`/albums/${user.id}`}>Albums</NavLink>
-                    <NavLink className="NavButton" onClick={() => {props.setLink(`users/${user.id}/posts`)}} to={`/posts/${user.id}`}>Posts</NavLink>
+                    <NavLink className="NavButton" onClick={() => {props.setLink(`#/users/${user.id}/albums`)}} to={`#/albums/${user.id}`}>Albums</NavLink>
+                    <NavLink className="NavButton" onClick={() => {props.setLink(`#/users/${user.id}/posts`)}} to={`#/posts/${user.id}`}>Posts</NavLink>
               </div>
           </div>
     

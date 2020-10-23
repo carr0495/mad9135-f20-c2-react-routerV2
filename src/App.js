@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { BrowserRouter as Router, NavLink, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, NavLink, Route, Switch } from 'react-router-dom';
 import Home from './components/Home'
 import Albums from './components/Albums'
 import Posts from './components/Posts'
@@ -34,19 +34,19 @@ function App() {
       <header>
         <h1>Navigation</h1>
       <nav className="home_nav_links">
-        <NavLink to="/" onClick={()=>{setLink('users')}}>Home</NavLink>
-        <NavLink to="/albums" onClick={()=>{setLink('albums')}}>Albums</NavLink>
-        <NavLink to="/posts" onClick={()=>{setLink('posts')}}>Posts</NavLink>
+        <NavLink to="#/" onClick={()=>{setLink('users')}}>Home</NavLink>
+        <NavLink to="#/albums" onClick={()=>{setLink('albums')}}>Albums</NavLink>
+        <NavLink to="#/posts" onClick={()=>{setLink('posts')}}>Posts</NavLink>
       </nav>
       </header>
     <Switch>
-    <Route exact path="/">
+    <Route exact path="#/">
       <Home data={data} setLink={setLink}/>
     </Route>
-    <Route  path={["/albums"]}>
+    <Route  path={["#/albums"]}>
       <Albums data={data}/>
     </Route>
-    <Route  path={["/posts"]}>
+    <Route  path={["#/posts"]}>
       <Posts data={data}/>
     </Route>
   </Switch>

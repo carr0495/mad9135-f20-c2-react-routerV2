@@ -17,6 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "http://carr0495.github.io/mad9135-f20-c2-react-routerV2",
   "eslintConfig": {
     "extends": "react-app"
   },
